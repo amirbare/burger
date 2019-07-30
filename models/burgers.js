@@ -7,11 +7,11 @@ var burger = {
 			cb(res);
 		});
 	},
-	create: function(cols, vals, cb) {
-		orm.create('Burgers', cols, vals, function (res){
+	update: function (id, cb) {
+		orm.update('Burgers',id, cb, function (res) {
 			cb(res);
 		});
-    }
+	}
 }
 
 module.exports = burger; 

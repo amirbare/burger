@@ -1,5 +1,6 @@
 <div class="container">
     <div class="jumbotron">
+        <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#burger-Modal">Create Burger</button>
     </div>
 
     <div class="row">
@@ -17,7 +18,7 @@
                                         <p class="burgers-name">{{this.burger_name}}</p>
                                     </div>
                                     <div class="col col-sm-3">
-                                        <form action="burgers/update?_method=PUT" method="POST">
+                                        <form action="/burgers/update?_method=PUT" method="POST">
                                             <input type="hidden" name="burger_id" value={{this.id}}>
                                             <button class="btn btn-sm btn-success center-block" type="submit">Devour It!</button>
                                         </form>
