@@ -14,9 +14,7 @@ var burger = {
 	},
 
 	create: function (name, cb) {
-		orm.create('Burgers',name, cb, function (res) {
-			cb(res);
-		});
+		orm.create('Burgers',name, cb); 
 	}
 }
 

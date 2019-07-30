@@ -42,13 +42,3 @@ router.post('/burgers/create',function(req,res)
 
 module.exports = router;
 
-
-// router.get("/", function(req, res) {
-//     burger.selectAll(function(data) {
-//       var hbsObject = {
-//         burgers: data
-//       };
-//       console.log(hbsObject);
-//       res.render("index", hbsObject);
-//     });
-//   });
