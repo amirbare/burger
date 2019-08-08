@@ -12,7 +12,9 @@ app.use(express.static(process.cwd() + '/public'));
 app.use(bodyParser.urlencoded({
 	extended: false
 }));
-
+app.get("/", function(req, res) {
+    res.json(path.join(__dirname, "views/index.handlebar"));
+  });
 app.use(methodOverride('_method'));
 app.engine('handlebars', exphbs({
     defaultLayout: 'main'
