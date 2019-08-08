@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 	extended: false
 }));
 app.get("/", function(req, res) {
-    res.json(path.join(__dirname, "views/index.handlebar"));
+    res.json(path.join(__dirname, "public/index.html"));
   });
 app.use(methodOverride('_method'));
 app.engine('handlebars', exphbs({
